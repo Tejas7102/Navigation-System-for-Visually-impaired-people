@@ -103,7 +103,7 @@ class voiceAssistant:
                 self.run()
             if("hello" in self.activateAssistant()):
                 print("Assistant Started")
-                self.speak("good morning  ")
+                self.speak("Hii, How can I help you")
                 while self.check:
                     userQuery = self.takeCommand().lower()
                     print(f"User Query: {userQuery}")
@@ -179,6 +179,7 @@ class voiceAssistant:
 
                     elif('exit' in userQuery):
                         print("Assistant Exited")
+                        self.speak("Ok, bye")
                         self.check = False
 
 if __name__ == "__main__":
